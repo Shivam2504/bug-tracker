@@ -51,12 +51,12 @@ const PriorityBadge: React.FC<{ priority: number }> = ({ priority }) => {
 
 //Here is the error
 //Removed Screenshot
-//Trying somthing new
+//Trying somting
 const BugCard: React.FC<BugCardProps> = ({ bug }) => {
   const imageUrl = bug.screenshot
     ? bug.screenshot.startsWith('http')
       ? bug.screenshot
-      : ``
+      : `${BASE_URL}${bug.screenshot}`
     : '';
 
     //
