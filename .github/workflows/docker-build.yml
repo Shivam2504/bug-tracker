@@ -20,7 +20,7 @@ jobs:
       uses: docker/login-action@v3
       with:
         username: shivam7000
-        password: ${{ secrets.DOCKERHUB_TOKEN}}
+        password: ${{secrets.DOCKERHUB_TOKEN}}
 
     - name: Build and push backend
       uses: docker/build-push-action@v5
