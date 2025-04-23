@@ -56,7 +56,7 @@ const BugCard: React.FC<BugCardProps> = ({ bug }) => {
   const imageUrl = bug.screenshot
     ? bug.screenshot.startsWith('http')
       ? bug.screenshot
-      : `${BASE_URL}${bug.screenshot}`
+      : ``
     : '';
 
     //
