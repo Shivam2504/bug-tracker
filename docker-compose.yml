@@ -32,7 +32,7 @@ services:
       DB_URI: mongodb://admin:password@mongodb:27017/bug-tracker?authSource=admin
     depends_on:
       - mongodb
-
+      
   frontend:
     # build: ./frontend
     image: shivam7000/dockerproject-frontend
